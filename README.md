@@ -1,8 +1,12 @@
 Assessment Test – Software Tester (QA)
 
 Full Name: Arpit Tyagi
+
 Email ID:  arpittyagi389@gmail.com
+
 Contact Number: 8445970389
+
+
 1. Test Scenarios and Test Cases
 
 A. Registration
