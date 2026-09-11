@@ -1,7 +1,7 @@
 Assessment Test – Software Tester (QA)
 
 Full Name: Arpit Tyagi
-Email ID:  arpit.tyagi.cse.2023@miet.ac.in
+Email ID:  arpittyagi389@gmail.com
 Contact Number: 8445970389
 1. Test Scenarios and Test Cases
 
