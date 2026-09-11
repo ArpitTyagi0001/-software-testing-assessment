@@ -9,323 +9,395 @@ Contact Number: 8445970389
 
 1. Test Scenarios and Test Cases
 
+
+
 A. Registration
 
 Test Case
 
 
-Scenario
-
-Expected Result
-
 REG-01
 
-Register with valid name, email and password
 
-User should be registered successfully
+Scenario : Register with valid name, email and password
+
+Expected Result : User should be registered successfully
+
 
 REG-02
 
-Register with an already registered email
 
-System should show an appropriate error
+Scenario : Register with an already registered email
+
+Expected Result : System should show an appropriate error
+
 
 REG-03
 
-Submit registration form with all fields empty
 
-Required field validation should be displayed
+Scenario : Submit registration form with all fields empty
+
+Expected Result : Required field validation should be displayed
+
 
 REG-04
 
-Enter invalid email format
 
-System should show invalid email message
+Scenario : Enter invalid email format
+
+Expected Result : System should show invalid email message
+
 
 REG-05
 
-Enter password less than minimum length
 
-Password validation should be displayed
+Scenario : Enter password less than minimum length
+
+Expected Result : Password validation should be displayed
+
 
 REG-06
 
-Enter password and confirm password differently
 
-System should show password mismatch error
+Scenario : Enter password and confirm password differently
+
+Expected Result : System should show password mismatch error
+
 
 REG-07
 
-Enter maximum allowed characters
 
-System should accept the data if within the limit
+Scenario : Enter maximum allowed characters
+
+Expected Result : System should accept the data if within the limit
+
 
 REG-08
 
-Enter more than the allowed characters
 
-System should show validation message
+Scenario : Enter more than the allowed characters
+
+Expected Result :  should show validation message
+
 
 REG-09
 
-Enter special characters in input fields
 
-System should handle them correctly
+Scenario : Enter special characters in input fields
+
+Expected Result : System should handle them correctly
+
 
 REG-10 
+
+
 Enter spaces only in required fields
+
+Expected Result : User should remain logged in if the session is valid
+
 
 B. Login
 
+
 Test Case
 
-Scenario
 
-Expected Result
 
 LOGIN-01
 
-Login with valid email and password
 
-User should login successfully
+Scenario : Login with valid email and password
+
+Expected Result : User should login successfully
+
 
 LOGIN-02
 
-Login with wrong password
 
-Error message should be displayed
+Scenario : Login with wrong password
+
+
+Expected Result : Error message should be displayed
+
+
 
 LOGIN-03
 
-Login with unregistered email
 
-Login should fail with proper message
+Scenario : Login with unregistered email
+
+Expected Result : Login should fail with proper message
+
 
 LOGIN-04
 
-Leave email empty
 
-Email validation should be displayed
+Scenario :  Leave email empty
+
+Expected Result : Email validation should be displayed
+
 
 LOGIN-05
 
-Leave password empty
 
-Password validation should be displayed
+Scenario :  Leave password empty
+
+Expected Result : Password validation should be displayed
+
 
 LOGIN-06
 
-Enter invalid email format
 
-Validation message should be displayed
+Scenario :  Enter invalid email format
+
+Expected Result : Validation message should be displayed
+
 
 LOGIN-07
 
-Enter wrong credentials multiple times
+Scenario :  Enter wrong credentials multiple times
 
-System should handle repeated failed attempts properly
+Expected Result : System should handle repeated failed attempts properly
+
 
 LOGIN-08
 
-Check password field
+Scenario :  Check password field
 
-Password should be masked
+Expected Result : Password should be masked
+
 
 LOGIN-09
 
-Logout and try to open task page
+Scenario :  Logout and try to open task page
 
-User should be redirected to login
+Expected Result : User should be redirected to login
+
 
 LOGIN-10
 
-Refresh page after login
+Scenario :  Refresh page after login
 
-User should remain logged in if the session is valid
+Expected Result : User should remain logged in if the session is valid
+
 
 2. Task CRUD Operations
 
 Create Task
 
+
 Test Case
 
-Scenario
-
 Expected Result
+
 
 CREATE-01
 
-Create a task with valid information
+Scenario : Create a task with valid information
 
-Task should be created successfully
+Expected Result :Task should be created successfully
+
 
 CREATE-02
 
-Create task without entering required title
 
-Validation message should be shown
+Scenario : Create task without entering required title
+
+Expected Result :Validation message should be shown
+
 
 CREATE-03
 
-Enter only spaces as task title
+Scenario :  Enter only spaces as task title
 
-Task should not be created
+Expected Result :Task should not be created
+
 
 CREATE-04
 
-Enter maximum allowed title length
 
-Task should be created successfully
+Scenario :  Enter maximum allowed title length
+
+Expected Result :Task should be created successfully
+
 
 CREATE-05
 
-Enter more than maximum allowed length
+Scenario :  Enter more than maximum allowed length
 
-Validation message should be displayed
+Expected Result :Validation message should be displayed
+
 
 CREATE-06
 
-Create two tasks with same name
 
-System should handle duplicate tasks correctly
+Scenario :  Create two tasks with same name
+
+Expected Result :System should handle duplicate tasks correctly
+
 
 CREATE-07
 
-Click Create button multiple times quickly
 
-Duplicate tasks should not be created
+Scenario :  Click Create button multiple times quickly
+
+Expected Result :Duplicate tasks should not be created
+
 
 CREATE-08
 
-Refresh after creating task
+Scenario :  Refresh after creating task
 
-Created task should still be available
+Expected Result : Created task should still be available
+
+
 
 View Task List
 
+
 Test Case
 
-Scenario
-
-Expected Result
 
 VIEW-01
 
-Open task list when tasks are available
+Scenario : Open task list when tasks are available
 
-All user’s tasks should be displayed
+Expected Result : All user’s tasks should be displayed
+
 
 VIEW-02
 
-Open task list when there are no tasks
 
-Proper empty-state message should be displayed
+Scenario : Open task list when there are no tasks
+
+Expected Result : Proper empty-state message should be displayed
+
 
 VIEW-03
 
-Create multiple tasks and check list
+Scenario : Create multiple tasks and check list
 
-All tasks should be displayed correctly
+Expected Result : All tasks should be displayed correctly
+
 
 VIEW-04
 
-Refresh the task list
 
-Tasks should remain consistent
+Scenario : Refresh the task list
+
+Expected Result : Tasks should remain consistent
+
 
 VIEW-05
 
-Try to view another user’s task
+Scenario : Try to view another user’s task
 
-User should not be able to access it
+Expected Result : User should not be able to access it
+
 
 Edit Task
 
+
 Test Case
 
-Scenario
 
-Expected Result
 
 EDIT-01
 
-Edit task with valid information
 
-Task should be updated successfully
+Scenario : Edit task with valid information
+
+Expected Result : Task should be updated successfully
+
 
 EDIT-02
 
-Edit task and leave required field empty
 
-Validation message should be displayed
+Scenario : Edit task and leave required field empty
+
+Expected Result : Validation message should be displayed
+
 
 EDIT-03
 
-Edit task with maximum allowed data
 
-Task should save successfully
+Scenario : Edit task with maximum allowed data
+
+Expected Result : Task should save successfully
+
 
 EDIT-04
 
-Cancel editing
+Scenario : Cancel editing
 
-Original task should remain unchanged
+Expected Result : Original task should remain unchanged
+
 
 EDIT-05
 
-Edit another user’s task
 
-User should not be allowed to edit it
+Scenario : Edit another user’s task
+
+Expected Result : User should not be allowed to edit it
+
 
 EDIT-06
 
-Refresh after editing
+Scenario : Refresh after editing
 
-Updated information should remain saved
+Expected Result : Updated information should remain saved
+
 
 Delete Task
 
 Test Case
 
-Scenario
-
-Expected Result
 
 DELETE-01
 
-Delete an existing task
 
-Task should be deleted successfully
+Scenario : Delete an existing task
+
+Expected Result : Task should be deleted successfully
+
 
 DELETE-02
 
-Click Delete and cancel confirmation
 
-Task should remain
+Scenario : Click Delete and cancel confirmation
+
+Expected Result :Task should remain
+
 
 DELETE-03
 
-Click Delete and confirm
 
-Task should be removed
+Scenario : Click Delete and confirm
+
+Expected Result : Task should be removed
+
 
 DELETE-04
 
-Refresh after deletion
 
-Deleted task should not come back
+Scenario : Refresh after deletion
+
+Expected Result : Deleted task should not come back
+
 
 DELETE-05
 
-Try to delete another user’s task
 
-User should not be allowed to delete it
+Scenario : Try to delete another user’s task
+
+Expected Result : User should not be allowed to delete it
+
 
 DELETE-06
 
-Click Delete multiple times
+Scenario : Click Delete multiple times
 
-Application should handle the request correctly
+Expected Result : Application should handle the request correctly
 
 3. Input Validation and Error Handling
 
